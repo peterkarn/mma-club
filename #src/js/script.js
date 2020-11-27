@@ -49,3 +49,32 @@ window.addEventListener('scroll', function () {
 //        alert(this.innerHTML); 
 //     });
 // });
+
+const swiper = new Swiper('.news__slider', {
+   pagination: {
+    el: '.swiper-pagination',
+     clickable: true,
+  },
+});
+
+const swiper2 = new Swiper('.gallery__container', {
+    slidesPerView: 5,
+    // spaceBetween: 15,
+    slidesPerColumn: 2,
+    slidesPerColumnFill: 'row',
+    slidesPerGroup: 10,
+    pagination: {
+      el: '.swiper-pagination',
+      clickable: true,
+  },
+    //  breakpoints: {
+    //        1200: {
+    //           slidesPerView: 'auto',
+    //           spaceBetween: 40,
+    //        },
+    //        830: {
+    //           slidesPerView: 'auto',
+    //           spaceBetween: 10, //
+    //        }
+    //     }
+});

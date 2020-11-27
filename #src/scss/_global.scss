@@ -233,3 +233,30 @@ img {
   flex-flow: column;
   align-items: center;
 }
+
+.swiper-pagination-bullet {
+  display: inline-block;
+  border: 2px solid #1c1c1c;
+  border-radius: 0;
+  width: 22px;
+  height: 22px;
+  background: #000;
+  opacity: 1;
+}
+
+.swiper-pagination-bullet-active {
+  background-color: #1c1c1c;
+  opacity: 1;
+}
+
+.swiper-container-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet {
+  margin: 0 14px;
+}
+
+.h1240 {
+  height: 1150px;
+}
+
+.accent {
+  color: #833ec9;
+}

@@ -19,6 +19,7 @@
   <meta property="og:image" content="img/logo.svg">
   <meta property="og:site_name" content="Head Hunters MMA">
   <!-- Styles -->
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
   <link rel="stylesheet" href="css/style.min.css">
 </head>
 
@@ -191,9 +192,9 @@
           </a>
         </div>
       </section>
-      <section class="dn news page-section">
-        <div class="container flex-col">
-          <h2 class="section-title decorated">
+      <section class="news page-section">
+        <div class="container">
+          <h2 class="section-title decorated news__title">
             Наши события
           </h2>
           <div class="swiper-container news__slider">
@@ -217,7 +218,7 @@
                     </p>
                   </article>
               </div>
-               <div class="swiper-slide news__slide">
+              <div class="swiper-slide news__slide">
                 <div class="news__img _ibg">
                   <img src="img/content/news-img.jpg" alt="Картинка новости(тренировка)">
                 </div>
@@ -236,7 +237,7 @@
                     </p>
                   </article>
               </div>
-                <div class="swiper-slide news__slide">
+              <div class="swiper-slide news__slide">
                 <div class="news__img _ibg">
                   <img src="img/content/news-img.jpg" alt="Картинка новости(тренировка)">
                 </div>
@@ -260,24 +261,93 @@
           </div>
         </div>
       </section>
-      <section class="page-section">
+      <section class="gallery page-section">
         <div class="container">
-
+          <div class="swiper-container gallery__container">
+              <div class="swiper-wrapper gallery__wrapper">
+                  <div class="swiper-slide gallery__slide _ibg">
+                    <img src="img/content/n2.jpg" alt="Фото галереи">
+                  </div>
+                  <div class="swiper-slide gallery__slide _ibg">
+                    <img src="img/content/n3.jpg" alt="Фото галереи">
+                  </div>
+                  <div class="swiper-slide gallery__slide _ibg">
+                    <img src="img/content/n4.jpg" alt="Фото галереи">
+                  </div>
+                  <div class="swiper-slide gallery__slide _ibg">
+                    <img src="img/content/n5.jpg" alt="Фото галереи">
+                  </div>
+                  <div class="swiper-slide gallery__slide _ibg">
+                    <img src="img/content/n6.jpg" alt="Фото галереи">
+                  </div>
+                  <div class="swiper-slide gallery__slide _ibg">
+                    <img src="img/content/n7.jpg" alt="Фото галереи">
+                  </div>
+                  <div class="swiper-slide gallery__slide _ibg">
+                    <img src="img/content/n8.jpg" alt="Фото галереи">
+                  </div>
+                  <div class="swiper-slide gallery__slide _ibg">
+                    <img src="img/content/n9.jpg" alt="Фото галереи">
+                  </div>
+                  <div class="swiper-slide gallery__slide _ibg">
+                    <img src="img/content/n10.jpg" alt="Фото галереи">
+                  </div>
+                  <div class="swiper-slide gallery__slide _ibg">
+                    <img src="img/content/n2.jpg" alt="Фото галереи">
+                  </div>
+                  <div class="swiper-slide gallery__slide _ibg">
+                    <img src="img/content/n3.jpg" alt="Фото галереи">
+                  </div>
+                  <div class="swiper-slide gallery__slide _ibg">
+                    <img src="img/content/n4.jpg" alt="Фото галереи">
+                  </div>
+              </div>
+              <div class="swiper-pagination"></div>
+          </div>
         </div>
       </section>
-      <section class="page-section">
+      <section class="page-section h1240">
         <div class="container">
           <h2 class="section-title"></h2>
         </div>
       </section>
-      <section class="page-section">
-        <div class="container">
-          <h2 class="section-title"></h2>
+      <section class="project page-section">
+        <div class="container project__inner">
+          <h2 class="project__title">
+            Наш проект по тренировке бойцов
+          </h2>
+          <p class="project__text">
+            Помимо тренировок по расписанию в нашем клубе регулярно проходят дни борьбы, а так же мы проводим соревнования, как внутри клуба, так и среди других клубов.
+          </p>
+          <a href="#" class="btn project__button">
+            <span>Перейти на сайт</span>
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <g clip-path="url(#clip0)">
+            <path d="M23.5029 12.7791L1.21769 23.0646C0.862839 23.2257 0.439421 23.1297 0.19257 22.8246C-0.0559956 22.5194 -0.0645668 22.0857 0.171999 21.772L7.50039 12.0008L0.171999 2.22965C-0.0645668 1.91595 -0.0559956 1.48053 0.190855 1.1771C0.357137 0.969681 0.605702 0.858255 0.857696 0.858255C0.979408 0.858255 1.10112 0.883968 1.21597 0.937111L23.5011 11.2226C23.8063 11.3631 24 11.6666 24 12.0008C24 12.3351 23.8063 12.6385 23.5029 12.7791Z" fill="white"/>
+            </g>
+            <defs>
+            <clipPath id="clip0">
+            <rect width="24" height="24" fill="white" transform="matrix(1 0 0 -1 0 24)"/>
+            </clipPath>
+            </defs>
+            </svg>
+          </a>
         </div>
       </section>
     </main>
+    <footer class="footer" id="footer">
+      <div class="container footer__inner">
+        <p class="footer__copy">
+          Все права защищены ® 2020
+        </p>
+        <a href="https://mma.producing.ru" class="footer__link">mma.producing.ru</a>
+        <a href="#" class="footer__conf">Политика конфеденциальности</a>
+        <a href="#">Designed by <span class="accent">Andrey</span> Ivanov</a>
+      </div>
+    </footer>
   </div>
 
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
   <script src="js/script.min.js"></script>
 </body>
 

@@ -672,6 +672,33 @@ img {
           align-items: center;
 }
 
+.swiper-pagination-bullet {
+  display: inline-block;
+  border: 2px solid #1c1c1c;
+  border-radius: 0;
+  width: 22px;
+  height: 22px;
+  background: #000;
+  opacity: 1;
+}
+
+.swiper-pagination-bullet-active {
+  background-color: #1c1c1c;
+  opacity: 1;
+}
+
+.swiper-container-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet {
+  margin: 0 14px;
+}
+
+.h1240 {
+  height: 1150px;
+}
+
+.accent {
+  color: #833ec9;
+}
+
 .site-header {
   position: fixed;
   left: 0;
@@ -856,10 +883,11 @@ img {
 .benefits__item {
   position: relative;
   z-index: 1;
+  min-width: 245px;
   text-align: center;
 }
 
-.benefits__item:after {
+.benefits__item::after {
   content: "";
   position: absolute;
   left: 50%;
@@ -883,6 +911,17 @@ img {
   width: 72px;
 }
 
+.news__title {
+  display: block;
+  max-width: -webkit-fit-content;
+  max-width: -moz-fit-content;
+  max-width: fit-content;
+}
+
+.news__wrapper {
+  padding-bottom: 115px;
+}
+
 .news__slide {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -897,7 +936,98 @@ img {
       -ms-flex: 0 0 660px;
           flex: 0 0 660px;
   margin-right: 28px;
-  padding-top: 33%;
+  padding-top: 28%;
+}
+
+.news__text {
+  margin-bottom: 20px;
+}
+
+.news__time {
+  display: inline-block;
+  margin-bottom: 24px;
+  font-size: 17px;
+  line-height: 19px;
+  color: #505050;
+}
+
+.news__line {
+  margin-bottom: 22px;
+  font-size: 33px;
+  line-height: 39px;
+}
+
+.news__paragraph {
+  margin-bottom: 34px;
+  font-size: 24px;
+  line-height: 27px;
+}
+
+.news__paragraph:last-child {
+  margin-bottom: 0;
+}
+
+.news .swiper-pagination {
+  bottom: 20px;
+}
+
+.gallery__wrapper {
+  padding-bottom: 110px;
+}
+
+.gallery__slide {
+  width: 257px;
+  height: 257px;
+}
+
+.gallery__slide img {
+  width: 95%;
+  height: 95%;
+}
+
+.project {
+  padding-top: 192px;
+  padding-bottom: 290px;
+  background-image: url("../img/backgrounds/fighter.png");
+  background-position: center right;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.project__inner {
+  padding-left: 58px;
+}
+
+.project__title {
+  margin-bottom: 42px;
+  font-size: 40px;
+  line-height: 37px;
+}
+
+.project__text {
+  margin-bottom: 74px;
+  max-width: 720px;
+}
+
+.project__button {
+  min-width: 330px;
+}
+
+.footer {
+  padding: 19px 0;
+  font-size: 17px;
+  line-height: 19px;
+  color: #505050;
+  background: #0a0a0a;
+}
+
+.footer__inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 @media (min-width: 767px) {
@@ -968,3 +1098,5 @@ img {
 .webp .offer { background-image: url(../img/backgrounds/hero-bg.webp); }
 
 .webp .benefits { background-image: url(../img/backgrounds/triangles-bg.webp); }
+
+.webp .project { background-image: url(../img/backgrounds/fighter.webp); }
