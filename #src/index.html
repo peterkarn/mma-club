@@ -25,7 +25,7 @@
 <body>
   <div class="site-container">
     @@include('_header.html')
-    <main class="main dn">
+    <main class="main">
       <section class="offer" id="offer">
         <div class="container">
           <h1 class="offer__title">
@@ -38,15 +38,27 @@
             <li>Устройство на региональные и федеральные соревнования</li>
           </ul>
           <a href="#" class="btn offer__button">
-            Узнать подробнее
+            <span>Узнать подробнее</span>
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <g clip-path="url(#clip0)">
+            <path d="M23.5029 12.7791L1.21769 23.0646C0.862839 23.2257 0.439421 23.1297 0.19257 22.8246C-0.0559956 22.5194 -0.0645668 22.0857 0.171999 21.772L7.50039 12.0008L0.171999 2.22965C-0.0645668 1.91595 -0.0559956 1.48053 0.190855 1.1771C0.357137 0.969681 0.605702 0.858255 0.857696 0.858255C0.979408 0.858255 1.10112 0.883968 1.21597 0.937111L23.5011 11.2226C23.8063 11.3631 24 11.6666 24 12.0008C24 12.3351 23.8063 12.6385 23.5029 12.7791Z" fill="white"/>
+            </g>
+            <defs>
+            <clipPath id="clip0">
+            <rect width="24" height="24" fill="white" transform="matrix(1 0 0 -1 0 24)"/>
+            </clipPath>
+            </defs>
+            </svg>
           </a>
         </div>
       </section>
       <section class="about page-section" id="about">
         <div class="container about__inner">
-          <img class="about__img" src="img/content/team.jpg" alt="Наша команда">
+          <div class="about__img _ibg">
+            <img src="img/content/team.jpg" alt="Наша команда">
+          </div>
           <article class="about__text">
-            <h2 class="section-title about__title">
+            <h2 class="section-title about__title decorated">
               О нас
             </h2>
             <div class="about__message">
@@ -63,13 +75,13 @@
         </div>
       </section>
       <section class="benefits page-section">
-        <div class="container">
-          <h2 class="section-title">
+        <div class="container flex-col">
+          <h2 class="section-title decorated">
             Почему нас выбирают
           </h2>
           <div class="benefits__inner">
             <div class="benefits__item">
-              <div class="betefits__icon">
+              <div class="benefits__icon">
                 <img src="img/icons/icons.svg#icon-man" class="svg-icon-man-dims" alt="icon-man" />
               </div>
               <p class="benefits__text">
@@ -77,15 +89,7 @@
               </p>
             </div>
             <div class="benefits__item">
-              <div class="betefits__icon">
-                <img src="img/icons/icons.svg#icon-man" class="svg-icon-man-dims" alt="icon-man" />
-              </div>
-              <p class="benefits__text">
-                Продвижение бойца в коммерческих промоушенах
-              </p>
-            </div>
-            <div class="benefits__item">
-              <div class="betefits__icon">
+              <div class="benefits__icon">
                 <img src="img/icons/icons.svg#icon-hand" class="svg-icon-hand-dims" alt="icon-hand" />
               </div>
               <p class="benefits__text">
@@ -93,7 +97,7 @@
               </p>
             </div>
             <div class="benefits__item">
-              <div class="betefits__icon">
+              <div class="benefits__icon">
                 <img src="img/icons/icons.svg#icon-trainer" class="svg-icon-trainer-dims" alt="icon-trainer" />
               </div>
               <p class="benefits__text">
@@ -101,7 +105,7 @@
               </p>
             </div>
             <div class="benefits__item">
-              <div class="betefits__icon">
+              <div class="benefits__icon">
                 <img src="img/icons/icons.svg#icon-contract" class="svg-icon-contract-dims" alt="icon-contract" />
               </div>
               <p class="benefits__text">
@@ -109,7 +113,7 @@
               </p>
             </div>
             <div class="benefits__item">
-              <div class="betefits__icon">
+              <div class="benefits__icon">
                 <img src="img/icons/icons.svg#icon-cup" class="svg-icon-cup-dims" alt="icon-cup" />
               </div>
               <p class="benefits__text">
@@ -117,7 +121,7 @@
               </p>
             </div>
             <div class="benefits__item">
-              <div class="betefits__icon">
+              <div class="benefits__icon">
                 <img src="img/icons/icons.svg#icon-tv" class="svg-icon-tv-dims" alt="icon-tv" />
               </div>
               <p class="benefits__text">
@@ -125,11 +129,24 @@
               </p>
             </div>
           </div>
+          <a class="btn" href="#">
+          <span>Присоединяйся к нам</span>
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <g clip-path="url(#clip0)">
+            <path d="M23.5029 12.7791L1.21769 23.0646C0.862839 23.2257 0.439421 23.1297 0.19257 22.8246C-0.0559956 22.5194 -0.0645668 22.0857 0.171999 21.772L7.50039 12.0008L0.171999 2.22965C-0.0645668 1.91595 -0.0559956 1.48053 0.190855 1.1771C0.357137 0.969681 0.605702 0.858255 0.857696 0.858255C0.979408 0.858255 1.10112 0.883968 1.21597 0.937111L23.5011 11.2226C23.8063 11.3631 24 11.6666 24 12.0008C24 12.3351 23.8063 12.6385 23.5029 12.7791Z" fill="white"/>
+            </g>
+            <defs>
+            <clipPath id="clip0">
+            <rect width="24" height="24" fill="white" transform="matrix(1 0 0 -1 0 24)"/>
+            </clipPath>
+            </defs>
+            </svg>
+          </a>
         </div>
       </section>
-      <section class="news page-section">
-        <div class="container">
-          <h2 class="section-title">
+      <section class="dn news page-section">
+        <div class="container flex-col">
+          <h2 class="section-title decorated">
             Наши события
           </h2>
           <div class="swiper-container news__slider">
@@ -214,7 +231,6 @@
     </main>
   </div>
 
-  <!-- @@include('_footer.html') -->
   <script src="js/script.min.js"></script>
 </body>
 

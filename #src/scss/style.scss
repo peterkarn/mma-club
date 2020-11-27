@@ -16,3 +16,181 @@
 @import "global";
 @import "vendor";
 @import "header";
+
+.offer {
+  padding: 9.5% 0;
+  background-image: url("../img/backgrounds/hero-bg.png");
+  background-position: right center;
+  background-size: contain;
+  background-repeat: no-repeat;
+
+  // .offer__title
+
+  &__title {
+    margin-bottom: 42px;
+    letter-spacing: 0.04em;
+  }
+
+  // .offer__list
+
+  &__list {
+    display: grid;
+    margin-bottom: 63px;
+    gap: 16px;
+
+    li {
+      position: relative;
+      padding-left: 43px;
+
+      &:before {
+        content: "";
+        position: absolute;
+        left: 0;
+        top: 50%;
+        border-radius: 50%;
+        width: 0.8em;
+        height: 0.8em;
+        background-color: rgba(235, 49, 54, 1);
+        transform: translateY(-50%);
+      }
+    }
+  }
+
+  // .offer__button
+
+  &__button {
+    min-width: 335px;
+  }
+}
+
+.about {
+
+  // .about__inner
+
+  &__inner {
+    display: flex;
+    align-items: center;
+  }
+
+  // .about__img
+
+  &__img {
+    flex: 0 1 580px;
+    margin-right: 54px;
+    padding-top: 34%;
+  }
+
+  // .about__text
+
+  &__text {
+    flex-basis: 50%;
+    font-size: 24px;
+    line-height: 1em;
+  }
+
+  // .about__title
+
+  &__title {
+    margin-bottom: 40px;
+    letter-spacing: 0.08em;
+  }
+
+  // .about__message
+
+  &__message {
+    display: grid;
+    gap: 30px;
+  }
+}
+
+.benefits {
+  background-image: url("../img/backgrounds/triangles-bg.jpg");
+  background-position: center bottom;
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  // .benefits__inner
+
+  &__inner {
+    display: flex;
+    grid-auto-flow: column;
+    margin: 0 -30px 75px;
+    gap: 20px;
+  }
+
+  // .benefits__item
+
+  &__item {
+    position: relative;
+    z-index: 1;
+    text-align: center;
+
+    &:after {
+      content: "";
+      position: absolute;
+      left: 50%;
+      top: 0;
+      z-index: -1;
+      border: 5px solid rgba(235, 49, 54, 0.2);
+      width: 100px;
+      height: 100px;
+      transform: translateX(-50%) rotate(45deg);
+    }
+  }
+
+  // .benefits__text
+
+  &__text {
+    font-size: 21px;
+    line-height: 1.2em;
+  }
+
+  // .benefits__icon
+
+  &__icon {
+    margin: 0 auto;
+    width: 72px;
+  }
+}
+
+.news {
+
+  // .news__slider
+
+  &__slider {}
+
+  // .news__wrapper
+
+  &__wrapper {}
+
+  // .news__slide
+
+  &__slide {
+    display: flex;
+    align-items: center;
+  }
+
+  // .news__img
+
+  &__img {
+    flex: 0 0 660px;
+    margin-right: 28px;
+    padding-top: 33%
+  }
+
+  // .news__text
+
+  &__text {}
+
+  // .news__time
+
+  &__time {}
+
+  // .news__line
+
+  &__line {}
+
+  // .news__paragraph
+
+  &__paragraph {}
+}
