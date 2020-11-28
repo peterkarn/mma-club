@@ -78,6 +78,15 @@
 }
 
 .nav__item {
+
+  @media screen and (min-width: $small) {
+    &:hover {
+      .nav__subwrapper {
+        top: 100%;
+      }
+    }
+  }
+
   a {
     display: block;
   }
@@ -125,16 +134,12 @@
   }
 }
 
-.nav__item {
-  @media screen and (min-width: $small) {
-    &:hover {
-      .nav__subwrapper {
-        top: 100%;
-      }
-    }
-  }
-}
-
 .nav__links {
   margin-left: 83px;
+
+  li {
+    &:hover {
+      animation: jello-horizontal 0.9s both;
+    }
+  }
 }

@@ -306,9 +306,66 @@
           </div>
         </div>
       </section>
-      <section class="page-section h1240">
-        <div class="container">
-          <h2 class="section-title"></h2>
+      <section class="feedback page-section">
+        <div class="container flex-col">
+          <h2 class="section-title decorated">
+            Заполните анкету бойца
+          </h2>
+          <form action="mail.php" class="form" method="POST">
+            <input type="hidden" name="admin_email[]" value="samsungr58home@gmail.com">
+            <input type="text" class="form__field form__field_name" name="name" placeholder="Введите ваше имя">
+            <input type="text" class="form__field form__field_region" name="region" placeholder="Введите Ваш город, регион">
+            <label class="form__fieldset">
+              <input type="text" class="form__field form__field_achievements" name="achievements1" placeholder="Заслуги, пояса, звания">
+              <input type="text" class="form__field form__field_style" name="style1" placeholder="Вид единоборств">
+              <input type="text" class="form__field form__field_stage" name="stage1" placeholder="Годы тренировок">
+            </label>
+            
+            <label class="form__fieldset dn">
+              <input type="text" class="form__field form__field_achievements" name="achievements2" placeholder="Заслуги, пояса, звания">
+              <input type="text" class="form__field form__field_style" name="style2" placeholder="Вид единоборств">
+              <input type="text" class="form__field form__field_stage" name="stage2" placeholder="Годы тренировок">
+            </label>
+             <label class="form__fieldset dn">
+              <input type="text" class="form__field form__field_achievements" name="achievements3" placeholder="Заслуги, пояса, звания">
+              <input type="text" class="form__field form__field_style" name="style3" placeholder="Вид единоборств">
+              <input type="text" class="form__field form__field_stage" name="stage3" placeholder="Годы тренировок">
+            </label>
+              <label class="form__fieldset dn">
+              <input type="text" class="form__field form__field_achievements" name="achievements4" placeholder="Заслуги, пояса, звания">
+              <input type="text" class="form__field form__field_style" name="style4" placeholder="Вид единоборств">
+              <input type="text" class="form__field form__field_stage" name="stage4" placeholder="Годы тренировок">
+            </label>
+              <label class="form__fieldset dn">
+              <input type="text" class="form__field form__field_achievements" name="achievements5" placeholder="Заслуги, пояса, звания">
+              <input type="text" class="form__field form__field_style" name="style5" placeholder="Вид единоборств">
+              <input type="text" class="form__field form__field_stage" name="stage5" placeholder="Годы тренировок">
+            </label> 
+            <button class="form__add">+ Добавить вкладку</button>
+            <input type="text" class="form__field form__field_tournaments" name="tournaments" placeholder="Опыт участия в проф. турнирах MMA, M1 и т.д.">
+            <input type="tel" data-validate-field="tel" class="form__field form__field_tel" name="tel" placeholder="Ваш номер телефона">
+            <input type="email" data-validate-field="email" class="form__field form__field_email" name="email" placeholder="Ваш e-mail">
+            <input type="text" class="form__field form__field_year" name="year" placeholder="Год">
+            <input type="text" class="form__field form__field_region2" name="region2" placeholder="Город, регион">
+            <input type="text" class="form__field form__field_tournamentname" name="tournamentname" placeholder="Название турнира">
+            <label class="form__policy">
+              <input type="checkbox">
+              <span>Согласен(на) на обработку данных</span>
+            </label>
+            <button type="submit" disabled class="form__btn btn">
+          <span>Присоединяйся к нам</span>
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <g clip-path="url(#clip0)">
+            <path d="M23.5029 12.7791L1.21769 23.0646C0.862839 23.2257 0.439421 23.1297 0.19257 22.8246C-0.0559956 22.5194 -0.0645668 22.0857 0.171999 21.772L7.50039 12.0008L0.171999 2.22965C-0.0645668 1.91595 -0.0559956 1.48053 0.190855 1.1771C0.357137 0.969681 0.605702 0.858255 0.857696 0.858255C0.979408 0.858255 1.10112 0.883968 1.21597 0.937111L23.5011 11.2226C23.8063 11.3631 24 11.6666 24 12.0008C24 12.3351 23.8063 12.6385 23.5029 12.7791Z" fill="white"/>
+            </g>
+            <defs>
+            <clipPath id="clip0">
+            <rect width="24" height="24" fill="white" transform="matrix(1 0 0 -1 0 24)"/>
+            </clipPath>
+            </defs>
+            </svg>
+            </button>
+          </form>
         </div>
       </section>
       <section class="project page-section">
@@ -348,6 +405,7 @@
   </div>
 
   <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/inputmask/4.0.9/inputmask/inputmask.min.js" integrity="sha512-DVfS/GbZzLMmxBL/CW92N84eHP2Fq9d+r9RKbvctcvzISVfu+WvD+MCvbK9j8I6nVLrntGo3UUVrNFUDX0ukBw==" crossorigin="anonymous"></script>
   <script src="js/script.min.js"></script>
 </body>
 
