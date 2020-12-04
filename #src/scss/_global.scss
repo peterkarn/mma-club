@@ -1,5 +1,6 @@
 html {
   box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 
 *,
@@ -94,7 +95,7 @@ button {
 
 .nav-icon1 {
   position: relative;
-  width: 20px;
+  width: 30px;
   height: 20px;
   transform: rotate(0deg);
   transition: 0.5s ease-in-out;
@@ -104,10 +105,9 @@ button {
     position: absolute;
     left: 0;
     display: block;
-    border-radius: 9px;
     width: 100%;
     height: 3px;
-    background: #948e8e;
+    background: #fff;
     opacity: 1;
     transform: rotate(0deg);
     transition: 0.25s ease-in-out;
@@ -118,11 +118,13 @@ button {
   }
 
   span:nth-child(2) {
-    top: 7px;
+    top: 9px;
   }
 
   span:nth-child(3) {
-    top: 14px;
+    left: 12px;
+    top: 18px;
+    width: 60%;
   }
 
   &.open span:nth-child(1) {
@@ -136,7 +138,9 @@ button {
   }
 
   &.open span:nth-child(3) {
+    left: 0;
     top: 10px;
+    width: 100%;
     transform: rotate(-135deg);
   }
 }
@@ -170,10 +174,11 @@ button {
   gap: 20px;
 
   &:hover {
-    transform: scale(0.97);
+    background: #ac2327;
+    transform: scale(0.99);
 
     svg {
-      animation: roll-in-blurred-right 0.3s cubic-bezier(0.230, 1.000, 0.320, 1.000) both;
+      animation: roll-in-blurred-right 0.3s cubic-bezier(.230, 1.000, 0.320, 1.000) both;
     }
   }
 }
@@ -261,7 +266,6 @@ button {
   margin: 0 14px;
 }
 
-
 .accent {
   color: #833ec9;
 }
@@ -269,6 +273,13 @@ button {
 .flip-in-diag-2-br {
   -webkit-animation: flip-in-diag-2-br 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
   animation: flip-in-diag-2-br 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+
+.js-validate-error-label {
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  transform: translateX(-50%);
 }
 
 @-webkit-keyframes flip-in-diag-2-br {

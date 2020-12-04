@@ -2,12 +2,13 @@
   position: fixed;
   left: 0;
   top: 0;
+  padding: 20px 0 10px;
   width: 100%;
   color: #fff;
 
   &.scrollable {
-    background-color: #000;
     z-index: 10;
+    background-color: #000;
   }
 }
 
@@ -15,16 +16,13 @@
   display: flex;
   align-items: center;
 
-  @media (min-width: $small) {
-    padding-top: 0;
-    padding-bottom: 0;
-  }
 }
 
 .brand {
   display: grid;
   align-items: center;
   grid-auto-flow: column;
+  margin-right: 30px;
   white-space: nowrap;
   gap: 20px;
 
@@ -32,6 +30,10 @@
     font-weight: 700;
     font-size: 30px;
     color: #c2c2c2;
+  }
+
+  &__img {
+    min-width: 30px;
   }
 }
 
@@ -46,30 +48,11 @@
 
 .nav__wrapper {
 
-  @media (min-width: $small - 1) {
+  @media (min-width: $small + 1) {
     display: grid;
     grid-auto-flow: column;
     width: 100%;
     gap: 26px;
-  }
-
-  @media (max-width: $small - 1) {
-    position: absolute;
-    left: 0;
-    right: 0;
-    top: 100%;
-    z-index: -1;
-    background-color: #d9f0f7;
-    opacity: 0;
-    visibility: hidden;
-    transform: translateY(-100%);
-    transition: transform 0.3s ease-out, opacity 0.3s ease-out;
-
-    &.active {
-      opacity: 1;
-      visibility: visible;
-      transform: translateY(0);
-    }
   }
 
   li {
@@ -79,7 +62,7 @@
 
 .nav__item {
 
-  @media screen and (min-width: $small) {
+  @media screen and (min-width: $small + 1) {
     &:hover {
       .nav__subwrapper {
         top: 100%;
@@ -106,6 +89,10 @@
   }
 }
 
+.nav__item_social {
+  display: none;
+}
+
 .nav__toggle {
   display: none;
   border: none;
@@ -113,24 +100,6 @@
 
   &:focus {
     outline: none;
-
-  }
-
-  @media (max-width: $small - 1) {
-    position: absolute;
-    right: 1rem;
-    top: 1rem;
-    display: block;
-  }
-}
-
-.nav__subwrapper {
-  position: absolute;
-  top: -1000%;
-
-  @media screen and (max-width: $small) {
-    position: static;
-    margin-left: 10px;
   }
 }
 

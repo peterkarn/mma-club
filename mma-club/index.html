@@ -44,12 +44,33 @@
     				<ul class="nav__wrapper">
     					<li class="nav__item"><a class="decorated" href="#">Главная</a></li>
     					<li class="nav__item">
-    						<a class="decorated" href="#">О нашем агентстве</a>
+    						<a class="decorated" href="#about">О нашем агентстве</a>
     					</li>
-    					<li class="nav__item"><a class="decorated" href="#">Почему мы</a></li>
-    					<li class="nav__item"><a class="decorated" href="#">Как это происходит</a></li>
-    					<li class="nav__item"><a class="decorated" href="#">Галерея</a></li>
-    					<li class="nav__item"><a class="decorated" href="#">Регистрация</a></li>
+    					<li class="nav__item"><a class="decorated" href="#benefits">Почему мы</a></li>
+    					<li class="nav__item"><a class="decorated" href="#news">Как это происходит</a></li>
+    					<li class="nav__item"><a class="decorated" href="#gallery">Галерея</a></li>
+              <li class="nav__item"><a class="decorated" href="#feedback">Регистрация</a></li>
+              <li class="nav__item nav__item_social">
+               <span>Мы в соцсетях</span>
+                <ul class="nav__item-links links">
+              <li>
+                <a href="#">
+                  <img src="img/icons/icons.svg#instagram" class="svg-vk-dims" alt="instagram">
+                </a>
+              </li>
+               <li>
+                <a href="#">
+                  <img src="img/icons/icons.svg#vk" class="svg-vk-dims" alt="vk"/>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <img src="img/icons/icons.svg#youtube" class="svg-vk-dims" alt="youtube">
+                </a>
+              </li>
+            </ul>
+              </li>
+              
             </ul>
             <ul class="nav__links links">
               <li>
@@ -85,7 +106,7 @@
             <li>Посредничество в заключении контрактов</li>
             <li>Устройство на региональные и федеральные соревнования</li>
           </ul>
-          <a href="#" class="btn offer__button">
+          <a href="#feedback" class="btn offer__button">
             <span>Узнать подробнее</span>
             <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
             <g clip-path="url(#clip0)">
@@ -122,7 +143,7 @@
           </article>
         </div>
       </section>
-      <section class="benefits page-section">
+      <section class="benefits page-section" id="benefits">
         <div class="container flex-col">
           <h2 class="section-title decorated">
             Почему нас выбирают
@@ -177,8 +198,8 @@
               </p>
             </div>
           </div>
-          <a class="btn" href="#">
-          <span>Присоединяйся к нам</span>
+          <a class="btn" href="#feedback">
+          <span> Узнать подробнее </span>
             <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
             <g clip-path="url(#clip0)">
             <path d="M23.5029 12.7791L1.21769 23.0646C0.862839 23.2257 0.439421 23.1297 0.19257 22.8246C-0.0559956 22.5194 -0.0645668 22.0857 0.171999 21.772L7.50039 12.0008L0.171999 2.22965C-0.0645668 1.91595 -0.0559956 1.48053 0.190855 1.1771C0.357137 0.969681 0.605702 0.858255 0.857696 0.858255C0.979408 0.858255 1.10112 0.883968 1.21597 0.937111L23.5011 11.2226C23.8063 11.3631 24 11.6666 24 12.0008C24 12.3351 23.8063 12.6385 23.5029 12.7791Z" fill="white"/>
@@ -192,7 +213,7 @@
           </a>
         </div>
       </section>
-      <section class="news page-section">
+      <section class="news page-section" id="news">
         <div class="container">
           <h2 class="section-title decorated news__title">
             Наши события
@@ -261,7 +282,7 @@
           </div>
         </div>
       </section>
-      <section class="gallery page-section">
+      <section class="gallery page-section" id="gallery">
         <div class="container">
           <div class="swiper-container gallery__container">
               <div class="swiper-wrapper gallery__wrapper">
@@ -306,13 +327,13 @@
           </div>
         </div>
       </section>
-      <section class="feedback page-section">
+      <section class="feedback page-section" id="feedback">
         <div class="container flex-col">
           <h2 class="section-title decorated">
             Заполните анкету бойца
           </h2>
           <form action="mail.php" class="form" method="POST">
-            <input type="hidden" name="admin_email[]" value="samsungr58home@gmail.com">
+            <input type="hidden" name="admin_email[]" value="hh.profmma@gmail.com">
             <input type="text" class="form__field form__field_name" name="name" placeholder="Введите ваше имя">
             <input type="text" class="form__field form__field_region" name="region" placeholder="Введите Ваш город, регион">
             <label class="form__fieldset">
@@ -341,19 +362,19 @@
               <input type="text" class="form__field form__field_style" name="style5" placeholder="Вид единоборств">
               <input type="text" class="form__field form__field_stage" name="stage5" placeholder="Годы тренировок">
             </label> 
-            <button class="form__add">+ Добавить вкладку</button>
+            <button class="form__add">+ Добавить поля</button>
             <input type="text" class="form__field form__field_tournaments" name="tournaments" placeholder="Опыт участия в проф. турнирах MMA, M1 и т.д.">
-            <input type="tel" data-validate-field="tel" class="form__field form__field_tel" name="tel" placeholder="Ваш номер телефона">
-            <input type="email" data-validate-field="email" class="form__field form__field_email" name="email" placeholder="Ваш e-mail">
             <input type="text" class="form__field form__field_year" name="year" placeholder="Год">
             <input type="text" class="form__field form__field_region2" name="region2" placeholder="Город, регион">
             <input type="text" class="form__field form__field_tournamentname" name="tournamentname" placeholder="Название турнира">
+            <input type="tel" data-validate-field="tel" class="form__field form__field_tel" name="tel" placeholder="Ваш номер телефона">
+            <input type="email" data-validate-field="email" class="form__field form__field_email" name="email" placeholder="Ваш e-mail">
             <label class="form__policy">
               <input type="checkbox">
               <span>Согласен(на) на обработку данных</span>
             </label>
             <button type="submit" disabled class="form__btn btn">
-          <span>Присоединяйся к нам</span>
+          <span>Отправить анкету</span>
             <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
             <g clip-path="url(#clip0)">
             <path d="M23.5029 12.7791L1.21769 23.0646C0.862839 23.2257 0.439421 23.1297 0.19257 22.8246C-0.0559956 22.5194 -0.0645668 22.0857 0.171999 21.772L7.50039 12.0008L0.171999 2.22965C-0.0645668 1.91595 -0.0559956 1.48053 0.190855 1.1771C0.357137 0.969681 0.605702 0.858255 0.857696 0.858255C0.979408 0.858255 1.10112 0.883968 1.21597 0.937111L23.5011 11.2226C23.8063 11.3631 24 11.6666 24 12.0008C24 12.3351 23.8063 12.6385 23.5029 12.7791Z" fill="white"/>
@@ -368,7 +389,7 @@
           </form>
         </div>
       </section>
-      <section class="project page-section">
+      <section class="project page-section" id="project">
         <div class="container project__inner">
           <h2 class="project__title">
             Наш проект по тренировке бойцов
@@ -399,7 +420,7 @@
         </p>
         <a href="https://mma.producing.ru" class="footer__link">mma.producing.ru</a>
         <a href="#" class="footer__conf">Политика конфеденциальности</a>
-        <a href="#">Designed by <span class="accent">Andrey</span> Ivanov</a>
+        <a href="#" class="footer__design">Designed by <span class="accent">Andrey</span> Ivanov</a>
       </div>
     </footer>
   </div>
