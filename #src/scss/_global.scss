@@ -9,7 +9,7 @@ html {
   box-sizing: inherit;
 }
 
-body {
+.body {
   margin: 0;
   font-family: "HeliosCond", sans-serif;
   font-size: 24px;
@@ -17,6 +17,10 @@ body {
   letter-spacing: 0.02em;
   color: #fff;
   background-color: #060606;
+}
+
+.body.locked {
+  overflow: hidden;
 }
 
 h1,

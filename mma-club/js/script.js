@@ -13,6 +13,9 @@
 let navToggle = document.querySelector(".nav__toggle");
 let navWrapper = document.querySelector(".nav__wrapper");
 let pageHeader = document.querySelector(".site-header");
+let body = document.querySelector(".body");
+let navLink = document.querySelectorAll(".nav__item a");
+
 
 navToggle.addEventListener("click", function () {
 	if (navWrapper.classList.contains("active")) {
@@ -20,15 +23,25 @@ navToggle.addEventListener("click", function () {
 		this.setAttribute("aria-label", "menu");
 		navWrapper.classList.remove("active");
     document.querySelector('.nav-icon1').classList.remove('open');
-    pageHeader.classList.remove('scrollable');
+    pageHeader.classList.remove('filled');
+    body.classList.remove('locked');
 	} else {
 		navWrapper.classList.add("active");
 		this.setAttribute("aria-label", "close menu");
 		this.setAttribute("aria-expanded", "true");
     document.querySelector('.nav-icon1').classList.add('open');
-    pageHeader.classList.add('scrollable');
-    
+    pageHeader.classList.add('filled');
+    body.classList.add('locked');
 	}
+});
+
+navLink.forEach((element) => {
+    element.addEventListener('click', function () {
+      pageHeader.classList.remove('filled');
+      body.classList.remove('locked');
+      document.querySelector('.nav-icon1').classList.remove('open');
+      	navWrapper.classList.remove("active");
+  });
 });
 
 //===========class with scroll============
